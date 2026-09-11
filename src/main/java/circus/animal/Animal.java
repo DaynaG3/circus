@@ -5,9 +5,8 @@ import java.util.Comparator;
 import circus.Asset;
 
 public abstract class Animal implements Asset {
-
-    public String name;
     public abstract String speak();
+    public String name;
 
     public static Comparator<Animal> animalNameComparator = new Comparator<Animal>() {
         @Override
